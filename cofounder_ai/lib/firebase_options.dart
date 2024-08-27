@@ -70,6 +70,9 @@ class DefaultFirebaseOptions {
     messagingSenderId: '972308486238',
     projectId: 'cofounder-ai-e647c',
     storageBucket: 'cofounder-ai-e647c.appspot.com',
+    androidClientId: '972308486238-anb8vpkd3q7u1382djhi7sk206bbkms4.apps.googleusercontent.com',
+    iosClientId: '972308486238-gjp7qmhmi41jpukvbltr90ap484jpja1.apps.googleusercontent.com',
     iosBundleId: 'com.example.cofounderAi',
   );
+
 }

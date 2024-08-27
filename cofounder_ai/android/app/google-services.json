@@ -12,7 +12,20 @@
           "package_name": "com.example.cofounder_ai"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "972308486238-anb8vpkd3q7u1382djhi7sk206bbkms4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cofounder_ai",
+            "certificate_hash": "63f8cea858dfb97ad664de61b4b2debb47ebe46b"
+          }
+        },
+        {
+          "client_id": "972308486238-e5n5jgjn2m8ufeclui4tprrl2h5cc0p3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAH52oHUFNZYV0yEAgkcJT275IWP7DTzeo"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "972308486238-e5n5jgjn2m8ufeclui4tprrl2h5cc0p3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "972308486238-gjp7qmhmi41jpukvbltr90ap484jpja1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.cofounderAi"
+              }
+            }
+          ]
         }
       }
     }
