@@ -18,7 +18,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
     return BlocListener<SignupBloc, SignupState>(
       listener: (BuildContext context, state) {
         if (state is SignupSuccess) {
-          Navigator.pushReplacementNamed(context, '/home');
+          Navigator.pushReplacementNamed(context, '/main');
         } else if (state is SignupFailure) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
@@ -39,30 +39,32 @@ class _SignUpScreenState extends State<SignUpScreen> {
           ),
           centerTitle: true,
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Lottie.network(
-                "https://lottie.host/99cb1661-25d0-4da2-87d4-44fc30a90626/FVClPD7SVK.json"),
-            BlocBuilder<SignupBloc, SignupState>(builder: (context, state) {
-              return state is SignupLoading
-                  ? const CircularProgressIndicator()
-                  : ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(0xffB28DFF)),
-                      onPressed: state is SignupLoading
-                          ? null
-                          : () {
-                              context
-                                  .read<SignupBloc>()
-                                  .add(GoogleSignInRequested());
-                            },
-                      child: Text(
-                        'Login with Google',
-                        style: Theme.of(context).textTheme.titleMedium,
-                      ));
-            })
-          ],
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Lottie.network(
+                  "https://lottie.host/99cb1661-25d0-4da2-87d4-44fc30a90626/FVClPD7SVK.json"),
+              BlocBuilder<SignupBloc, SignupState>(builder: (context, state) {
+                return state is SignupLoading
+                    ? const CircularProgressIndicator()
+                    : ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                            backgroundColor: Theme.of(context).primaryColor),
+                        onPressed: state is SignupLoading
+                            ? null
+                            : () {
+                                context
+                                    .read<SignupBloc>()
+                                    .add(GoogleSignInRequested());
+                              },
+                        child: Text(
+                          'Sign In with Google',
+                          style: Theme.of(context).textTheme.titleMedium,
+                        ));
+              })
+            ],
+          ),
         ),
       ),
     );
