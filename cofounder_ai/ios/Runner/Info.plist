@@ -28,6 +28,10 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+    <string>This app uses speech recognition to convert your spoken ideas into text for easy capture and AI expansion.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>This app needs microphone access to capture your spoken ideas for conversion to text.</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

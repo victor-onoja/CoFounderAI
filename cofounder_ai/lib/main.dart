@@ -1,7 +1,9 @@
 import 'package:cofounder_ai/blocs/auth/signup_bloc.dart';
+import 'package:cofounder_ai/blocs/idea/idea_bloc.dart';
 import 'package:cofounder_ai/firebase_options.dart';
 import 'package:cofounder_ai/screens/collaboration_screen.dart';
 import 'package:cofounder_ai/screens/home_screen.dart';
+import 'package:cofounder_ai/screens/idea_capture_screen.dart';
 import 'package:cofounder_ai/screens/idea_screen.dart';
 import 'package:cofounder_ai/screens/profile_screen.dart';
 import 'package:cofounder_ai/screens/projects_screen.dart';
@@ -28,7 +30,10 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-      providers: [BlocProvider(create: (context) => SignupBloc())],
+      providers: [
+        BlocProvider(create: (context) => SignupBloc()),
+        BlocProvider(create: (context) => IdeaBloc())
+      ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'CoFounder AI',
@@ -46,6 +51,7 @@ class MainApp extends StatelessWidget {
           '/main': (context) => const MainScreen(),
           '/home': (context) => const HomeScreen(),
           '/ideas': (context) => const IdeaScreen(),
+          '/idea-capture': (context) => const IdeaCaptureScreen(),
           '/projects': (context) => const ProjectsScreen(),
           '/collaborations': (context) => const CollaborationScreen(),
           '/profile': (context) => const ProfileScreen()

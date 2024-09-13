@@ -15,7 +15,7 @@ class HomeScreen extends StatelessWidget {
         children: [const AIQuoteWidget(), RecentItemsList()],
       ),
       floatingActionButton: PulsingFAB(onPressed: () {
-        // Navigate to Idea Capture Screen
+        Navigator.pushNamed(context, '/idea-capture');
       }),
     );
   }
