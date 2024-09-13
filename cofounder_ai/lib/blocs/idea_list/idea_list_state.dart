@@ -1,4 +1,3 @@
-// idea_list_state.dart
 import 'package:equatable/equatable.dart';
 import 'package:cofounder_ai/models/idea.dart';
 

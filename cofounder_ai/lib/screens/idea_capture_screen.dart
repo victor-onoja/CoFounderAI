@@ -154,7 +154,7 @@ class _IdeaCaptureScreenState extends State<IdeaCaptureScreen>
                     ? const Text('Listening...')
                     : _speechEnabled
                         ? const Text(
-                            'Tap the mic icon to start and stop listening.\nWorks best when you say your idea in one take, not too long.',
+                            'Tap the mic icon to start and stop listening.\nWorks best when you say your idea in one sentence.',
                             textAlign: TextAlign.center,
                           )
                         : const Text('speech not available, type your idea :)'),
