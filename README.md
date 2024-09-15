@@ -2,7 +2,7 @@
 Github repo for Enyata Build-a-thon project.
 
 ## MVP Documentation 
-link: https://docs.google.com/document/d/1z_0HTRmlL_Nu4cQ1dw1eEDbROsItHlqJDZBv6VDXasY/edit?usp=drivesdk
+https://docs.google.com/document/d/1z_0HTRmlL_Nu4cQ1dw1eEDbROsItHlqJDZBv6VDXasY/edit?usp=drivesdk
 
 ## Test App
-link: https://appetize.io/app/b_d56sy7a7x6dbhoz6k6ff26zebe
+https://appetize.io/app/b_d56sy7a7x6dbhoz6k6ff26zebe
