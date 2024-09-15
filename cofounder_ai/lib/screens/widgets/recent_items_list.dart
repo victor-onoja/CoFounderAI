@@ -22,7 +22,7 @@ class RecentItemsList extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(16.0),
           child: Text(
-            "Recent Items",
+            "Recent Items (samples)",
             style: Theme.of(context).textTheme.titleLarge,
           ),
         ),
@@ -34,6 +34,13 @@ class RecentItemsList extends StatelessWidget {
             itemBuilder: (context, index) {
               return ItemCard(item: items[index]);
             },
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Text(
+            "Press the plus icon to capture a new idea",
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
         ),
       ],
