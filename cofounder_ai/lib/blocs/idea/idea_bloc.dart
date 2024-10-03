@@ -50,7 +50,14 @@ class IdeaBloc extends Bloc<IdeaEvent, IdeaState> {
 
   Future<String> _expandIdeaWithAI(String idea) async {
     final prompt =
-        "You're an experienced business analyst and strategist. Analyze this text $idea. Be creative and strategic in your analysis and give your response in this format: Expanded idea: [Original Idea]\n\n1. Market analysis\n2. Key features\n3. Target audience\n4. Revenue model\n5. Development roadmap";
+        '''You're an experienced business analyst and strategist. Analyze this text $idea. Be creative and strategic in your analysis and give your response in this format: 
+        Expanded idea: [Original Idea]
+        
+        1. Market analysis
+        2. Key features
+        3. Target audience
+        4. Revenue model
+        5. Development roadmap''';
     final content = [Content.text(prompt)];
     final response = await model.generateContent(content);
     return response.text ??

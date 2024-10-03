@@ -5,7 +5,7 @@ import 'package:cofounder_ai/screens/collaboration_screen.dart';
 import 'package:cofounder_ai/screens/home_screen.dart';
 import 'package:cofounder_ai/screens/idea_capture_screen.dart';
 import 'package:cofounder_ai/screens/idea_screen.dart';
-import 'package:cofounder_ai/screens/profile_screen.dart';
+import 'package:cofounder_ai/screens/quickchat_screen.dart';
 import 'package:cofounder_ai/screens/projects_screen.dart';
 import 'package:cofounder_ai/screens/sign_up_screen.dart';
 import 'package:cofounder_ai/screens/splash_screen.dart';
@@ -54,7 +54,7 @@ class MainApp extends StatelessWidget {
           '/idea-capture': (context) => const IdeaCaptureScreen(),
           '/projects': (context) => const ProjectsScreen(),
           '/collaborations': (context) => const CollaborationScreen(),
-          '/profile': (context) => const ProfileScreen()
+          '/quick-chat': (context) => QuickChatScreen()
         },
       ),
     );

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'collaboration_screen.dart';
 import 'home_screen.dart';
 import 'idea_screen.dart';
-import 'profile_screen.dart';
+import 'quickchat_screen.dart';
 import 'projects_screen.dart';
 import 'widgets/bottom_nav_bar.dart';
 
@@ -22,8 +22,8 @@ class _MainScreenState extends State<MainScreen> {
     const HomeScreen(),
     const IdeaScreen(),
     const ProjectsScreen(),
+    QuickChatScreen(),
     const CollaborationScreen(),
-    const ProfileScreen(),
   ];
 
   @override

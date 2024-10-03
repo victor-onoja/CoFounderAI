@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 class PulsingFAB extends StatefulWidget {
   final VoidCallback onPressed;
+  final bool? message;
 
-  const PulsingFAB({super.key, required this.onPressed});
+  const PulsingFAB({super.key, required this.onPressed, this.message = false});
 
   @override
   _PulsingFABState createState() => _PulsingFABState();
@@ -35,7 +36,9 @@ class _PulsingFABState extends State<PulsingFAB>
           child: FloatingActionButton(
             onPressed: widget.onPressed,
             backgroundColor: Theme.of(context).primaryColor,
-            child: const Icon(Icons.add),
+            child: widget.message!
+                ? const Icon(Icons.send)
+                : const Icon(Icons.add),
           ),
         );
       },

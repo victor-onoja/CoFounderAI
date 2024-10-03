@@ -8,11 +8,11 @@ class AnimatedBottomNavBar extends StatelessWidget {
       {super.key, required this.currentIndex, required this.onTap});
 
   final List<IconData> _icons = [
-    Icons.home,
-    Icons.lightbulb,
-    Icons.dashboard,
-    Icons.people,
-    Icons.person,
+    Icons.home_outlined,
+    Icons.lightbulb_outlined,
+    Icons.work_outlined,
+    Icons.quickreply_outlined,
+    Icons.people_outlined,
   ];
 
   @override
