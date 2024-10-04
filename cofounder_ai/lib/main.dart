@@ -54,7 +54,7 @@ class MainApp extends StatelessWidget {
           '/idea-capture': (context) => const IdeaCaptureScreen(),
           '/projects': (context) => const ProjectsScreen(),
           '/collaborations': (context) => const CollaborationScreen(),
-          '/quick-chat': (context) => QuickChatScreen()
+          '/quick-chat': (context) => const QuickChatScreen()
         },
       ),
     );
