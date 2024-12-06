@@ -10,7 +10,10 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Cofounder AI')),
+      appBar: AppBar(
+        title: const Text('Cofounder AI'),
+        centerTitle: true,
+      ),
       body: Column(
         children: [const AIQuoteWidget(), RecentItemsList()],
       ),

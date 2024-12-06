@@ -22,7 +22,7 @@ class _MainScreenState extends State<MainScreen> {
     const HomeScreen(),
     const IdeaScreen(),
     const ProjectsScreen(),
-    QuickChatScreen(),
+    const QuickChatScreen(),
     const CollaborationScreen(),
   ];
 

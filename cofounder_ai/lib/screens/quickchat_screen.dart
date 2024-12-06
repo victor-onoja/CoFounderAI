@@ -16,9 +16,11 @@ class QuickChatScreen extends StatelessWidget {
       create: (context) => ChatBloc()..initChat(),
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Quick Chat'),
-          backgroundColor: Colors.transparent,
+          title: const Text(
+            'Quick Chat',
+          ),
           elevation: 0,
+          centerTitle: true,
         ),
         body: BlocConsumer<ChatBloc, ChatState>(
           listener: (context, state) {

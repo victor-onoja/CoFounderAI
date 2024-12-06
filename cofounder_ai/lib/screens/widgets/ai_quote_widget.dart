@@ -83,7 +83,7 @@ class _AIQuoteWidgetState extends State<AIQuoteWidget>
   @override
   void dispose() {
     _controller.dispose();
-    _timer.cancel(); // Don't forget to cancel the timer when disposing
+    _timer.cancel();
     super.dispose();
   }
 }

@@ -1,11 +1,14 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+import 'sprint.dart';
+
 class Project {
   final String id;
   final String title;
   final String description;
   final List<Sprint> sprints;
   final DateTime startDate;
+  final String userId;
 
   Project({
     required this.description,
@@ -13,6 +16,7 @@ class Project {
     required this.title,
     required this.sprints,
     required this.startDate,
+    required this.userId,
   });
 
   factory Project.fromJson(Map<String, dynamic> json) {
@@ -23,6 +27,7 @@ class Project {
       sprints:
           (json['sprints'] as List).map((s) => Sprint.fromJson(s)).toList(),
       startDate: (json['startDate'] as Timestamp).toDate(),
+      userId: json['userId'],
     );
   }
 
@@ -33,6 +38,7 @@ class Project {
       'description': description,
       'sprints': sprints.map((s) => s.toJson()).toList(),
       'startDate': Timestamp.fromDate(startDate),
+      'userId': userId
     };
   }
 }

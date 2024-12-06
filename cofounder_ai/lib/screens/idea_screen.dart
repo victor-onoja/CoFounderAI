@@ -16,7 +16,8 @@ class IdeaScreen extends StatelessWidget {
       create: (context) => IdeaListBloc()..add(FetchIdeas()),
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Your Ideas'),
+          title: const Text('My Ideas'),
+          centerTitle: true,
           elevation: 0,
         ),
         body: BlocBuilder<IdeaListBloc, IdeaListState>(

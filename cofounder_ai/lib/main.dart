@@ -1,5 +1,6 @@
 import 'package:cofounder_ai/blocs/auth/signup_bloc.dart';
 import 'package:cofounder_ai/blocs/idea/idea_bloc.dart';
+import 'package:cofounder_ai/blocs/project/project_bloc.dart';
 import 'package:cofounder_ai/firebase_options.dart';
 import 'package:cofounder_ai/screens/collaboration_screen.dart';
 import 'package:cofounder_ai/screens/home_screen.dart';
@@ -32,7 +33,8 @@ class MainApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (context) => SignupBloc()),
-        BlocProvider(create: (context) => IdeaBloc())
+        BlocProvider(create: (context) => IdeaBloc()),
+        BlocProvider(create: (context) => ProjectBloc())
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

@@ -1,5 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+import 'task.dart';
+
 class Sprint {
   final String id;
   final String title;
@@ -14,7 +16,7 @@ class Sprint {
       required this.description,
       required this.tasks,
       required this.dueDate,
-      required this.isCompleted});
+      this.isCompleted = false});
 
   factory Sprint.fromJson(Map<String, dynamic> json) {
     return Sprint(
